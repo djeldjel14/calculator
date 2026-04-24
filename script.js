@@ -1,5 +1,5 @@
 let display = document.getElementById('display');
-let text = '';
+let text = '0';
 let operator = '';
 let previousNumber = '';
 
@@ -21,7 +21,6 @@ function calculate(){
     else if(operator === '-') result = num1 - num2;
     else if(operator === '*') result = num1 * num2;
     else if(operator === '/') result = num1 / num2;
-
     display.textContent = result;
     text = '';
 }
