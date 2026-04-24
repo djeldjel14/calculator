@@ -4,7 +4,11 @@ let operator = '';
 let previousNumber = '';
 
 function pressNumber(button){
-    text += button.textContent;
+    if(text === '0'){
+        text = button.textContent;
+    } else {
+        text += button.textContent;
+    }
     display.textContent = text;
 }
 function pressOperator(button){
