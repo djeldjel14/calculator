@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="mycalculator">
+  <div class="screen">
+    <p id="display">0</p>
+  </div>
+  <div class="numbers">
+    <button onclick="pressNumber(this)">1</button>
+    <button onclick="pressNumber(this)">2</button>
+    <button onclick="pressNumber(this)">3</button>
+    <button onclick="pressNumber(this)">4</button>
+    <button onclick="pressNumber(this)">5</button>
+    <button onclick="pressNumber(this)">6</button>
+    <button onclick="pressNumber(this)">7</button>
+    <button onclick="pressNumber(this)">8</button>
+    <button onclick="pressNumber(this)">9</button>
+    <button onclick="pressNumber(this)">0</button>
+</div>
+  <div class="operator">
+    <button onclick="pressOperator(this)">*</button>
+    <button onclick="pressOperator(this)">/</button>
+    <button onclick="pressOperator(this)">-</button>
+    <button onclick="pressOperator(this)">+</button>
+  </div>
+  <div class="result">
+    <button onclick="calculate()">=</button>
+    <button onclick="clearDisplay()">C</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
