@@ -16,6 +16,10 @@ function pressOperator(button){
     operator = button.textContent;
     text = '';
 }
+function toggleSign(){
+    text = (parseFloat(text) * -1).toString();
+    display.textContent = text;
+}
 function calculate(){
     let num1 = parseFloat(previousNumber);
     let num2 = parseFloat(text);
@@ -33,7 +37,7 @@ function calculate(){
         }
     }
     display.textContent = result;
-    text = '';
+    text = result.toString();
 }
 
 function clearDisplay(){
